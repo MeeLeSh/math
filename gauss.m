@@ -15,7 +15,7 @@ f_x = fun(x_k);
 g_s = g_s + (A_k(i + 1) * f_x) + ((b - a).^(2 * n + 3) * (factorial(n + 1)).^4) / ((factorial(2 * (n+1))).^3 * (2 * n + 3));
 end
 
-fprintf('result: %f',simpson)
+fprintf('result: %f', g_s)
 
 function result = fun(x)
     result = -3*x^5 + 4*x^4 + 5*x^3 - x^2 - 2*x + 1; 
